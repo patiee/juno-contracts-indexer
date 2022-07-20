@@ -5,11 +5,12 @@ export default cleanEnv(
   {
     PGUSER: str({ default: 'postgres' }),
     PGHOST: str({ default: 'localhost' }),
-    PGPASSWORD: str({ default: 'password' }),
-    PGDATABASE: str({ default: 'test_database' }),
-    SCHEMA: str({ default: 'app_public' }),
+    PGPASSWORD: str({ default: 'postgres' }),
+    PGDATABASE: str({ default: 'postgres' }),
+    SCHEMA: str({ default: 'app' }),
     PGPORT: port({ default: 5432 }),
-    SERVER_PORT: port({ default: 5758 })
+    SERVER_PORT: port({ default: 5758 }),
+    SERVER_HOST: str({ default: 'localhost' }),
   },
   { dotEnvPath: null }
 );

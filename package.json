@@ -1,9 +1,9 @@
 {
-  "name": "@pyramation/contract-indexer",
+  "name": "@patiee/juno-contract-indexer",
   "version": "0.0.1",
-  "description": "contract indexer",
-  "author": "Dan Lynch <pyramation@gmail.com>",
-  "homepage": "https://github.com/pyramation/contract-indexer#readme",
+  "description": "Juno contract indexer",
+  "author": "Patrycja Zawadka <zawpatrycja@gmail.com>",
+  "homepage": "https://github.com/patiee/juno-contracts-indexer#readme",
   "license": "SEE LICENSE IN LICENSE",
   "main": "main/index.js",
   "module": "module/index.js",
@@ -32,17 +32,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/pyramation/contract-indexer"
+    "url": "https://github.com/patiee/juno-contracts-indexer"
   },
   "keywords": [
     "postgraphile",
     "graphile",
-    "launchql",
+    "juno-contracts-indexer",
     "postgres",
     "graphql"
   ],
   "bugs": {
-    "url": "https://github.com/pyramation/contract-indexer/issues"
+    "url": "https://github.com/patiee/juno-contracts-indexer/issues"
   },
   "devDependencies": {
     "@babel/cli": "7.11.6",
@@ -69,7 +69,6 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.11.2",
-    "@launchql/graphile-settings": "^0.1.3",
     "@launchql/server-utils": "^0.1.2",
     "@pyramation/url-domains": "^0.0.4",
     "debug": "^4.2.0",
@@ -78,6 +77,11 @@
     "graphile-build": "^4.9.0",
     "graphile-utils": "^4.9.0",
     "graphql-upload": "^11.0.0",
-    "postgraphile": "^4.9.0"
+    "postgraphile": "^4.9.0",
+    "@graphile-contrib/pg-many-to-many": "1.0.1",
+    "@pyramation/postgraphile-plugin-fulltext-filter": "2.0.0",
+    "graphile-simple-inflector": "0.1.1",
+    "postgraphile-plugin-connection-filter": "2.2.2",
+    "postgraphile-plugin-connection-filter-postgis": "1.0.0-alpha.6"
   }
 }
